@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #FEFEFE;
+}
+
+header.wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    padding: 5px 15px;
+    box-shadow: 1px 2px 10px 2px rgba(0,0,0,.1);
+    background-color: rgb(109, 34, 34);
+}
+
+nav .brand {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-menu li {
+    list-style: none;
+    padding: 20px 15px;
+}
+
+.navbar-menu li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 11px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-menu li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    color: rgb(82, 31, 31);
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-menu a:hover {
+    background: rgb(218, 197, 197);
+    transition: .5s;
+}
+/* Style the search input and button */
+.nav-search {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-search input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.nav-search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-search button i {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* Add styles for the search input and button as needed */
+
+
+
+
