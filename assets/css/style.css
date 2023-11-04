@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Bebas+Neue&family=Bevan&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Krona+One&family=Merriweather:wght@900&family=PT+Serif:wght@700&family=Poppins:ital,wght@0,500;1,200&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -110,6 +111,228 @@ nav .brand {
 }
 
 /* Add styles for the search input and button as needed */
+
+/* buat format awal */
+
+img {
+    vertical-align: top;
+}
+
+.content{
+    display: flex;
+  }
+  .content main{
+    width: 60%;
+    height: 662px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content aside{
+    width: 40%;
+    height: 662px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* styling Images */
+
+.mySlides{
+    display: none;
+}
+
+.mySlides img{
+    border-radius: 13px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 5px;
+    padding-right: 0;
+    margin-left: 105px;
+
+}
+.side img{
+    margin-top: 548px;
+    margin-bottom: 0;
+    margin-right: 16px;
+    padding: 10px;
+    border-radius: 18px;
+    margin-right: 100px;
+    margin-bottom: 0;
+  
+}
+
+.side-2 img{
+  margin-top: 0;
+  margin-bottom: 380px;
+  margin-right: 100px;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+/* Caption text Styling*/
+/* text top */
+.text h3{
+    color: #f2f2f2;
+    font-size: 2.5rem;
+    padding-left: 32px;
+    padding-right: 46px;
+    position: absolute;
+    bottom: 96px;
+    width: 100%;
+    align-items: start;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    padding-right: 100px;
+}
+
+.text h3 a{
+    text-decoration: none;
+    color: white;
+  }
+  .text h3 a:hover{
+    color: red;
+  }
+.text p{
+  margin-top: 0;
+  position: absolute;
+  font-family: josefin sans;
+  margin-left: 140px;
+  bottom: 36px;
+  color: white;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.text h6{
+  margin-top: 0;
+  position: absolute;
+  font-family: josefin sans;
+  margin-left: 135px;
+  bottom: 225px;
+  color: white;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  background: red;
+  padding: 8px 13px 8px 13px;
+}
+
+/* text side */
+/* text-side 1 */
+.text-side-1 h3{
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  font-family: Josefin Sans;
+  font-weight: bold;
+  align-items: start;
+  text-align: left;
+  position: relative;
+  bottom: 725px;
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 67px;
+  padding-right: 150px;
+
+}
+
+.text-side-1 h6{
+  margin-top: 0;
+  position: relative;
+  font-family: josefin sans;
+  margin-right: 370px;
+  bottom: 750px;
+  color: white;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  background-color: blue;
+  display: inline;
+  padding: 8px 13px 8px 13px;
+  
+}
+
+.text-side-1 p{
+  margin-top: 0;
+  position: relative;
+  margin-right: 285px;
+  font-family: josefin sans;
+  bottom: 707px;
+  color:white;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* text-side-2 */
+
+.text-side-2 h3{
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  font-family: Josefin Sans;
+  font-weight: bold;
+  align-items: start;
+  text-align: left;
+  position: relative;
+  bottom: 580px;
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 67px;
+  padding-right: 150px;
+
+}
+
+.text-side-2 h6{
+  margin-top: 0;
+  position: relative;
+  font-family: josefin sans;
+  margin-right: 350px;
+  bottom: 610px;
+  color: white;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  background-color: green;
+  display: inline;
+  padding: 8px 13px 8px 13px;
+}
+
+.text-side-2 p{
+  margin-top: 0;
+  position: relative;
+  margin-right: 280px;
+  font-family: josefin sans;
+  bottom: 560px;
+  color:white;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+  
+/* buat transisi */
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 
 
