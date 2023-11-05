@@ -334,6 +334,101 @@ img {
     to {opacity: 1}
   }
 
+/* HOT NEWS*/
 
+.container{
+  width: max-content;
+  margin: 3rem 0 0 7rem;
+}
 
+/* TAGLINE */
+.tagline{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.tagline h1{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.tagline ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 1rem 0 13rem;
+  
+}
+
+.tagline ul li a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+/* ROW-1*/
+.row-1{
+  display: flex;
+}
+
+/*DETAILS1*/
+.details1{
+  width: 350px;
+  margin-left: 1rem;
+  text-align: justify;
+}
+
+.details1 h1{
+  margin-top: 1rem;
+}
+
+.details1 .img-1{
+  border-radius: 10px;
+}
+
+.writer{
+  margin-top: 0.2rem;
+  font-weight: 50;
+  font-size: 14px;
+}
+
+.details1 p{
+  margin-top: 1rem;
+}
+
+/* DETAILS2*/
+.details2{
+  margin: -1rem 2rem 0 5rem;
+  text-align: justify;
+  
+}
+
+.card-news{
+  display: flex;
+  margin-top: 1rem;
+  text-align: justify;
+  
+}
+
+.card-news img{
+  border-radius: 10px;
+}
+
+.card-news-text{
+  margin: 0.3rem 0 0 1rem;
+}
+
+.card-news-text .category{
+  color: blue;
+}
+
+.card-news-text .articel{
+  margin-top: 1rem;
+}
+.card-news-text .date{
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
 
