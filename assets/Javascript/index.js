@@ -50,4 +50,23 @@ const initSlider = () => {
 
 window.addEventListener("load", initSlider);
 
-// trending new end
+// trending news end
+
+//News Start
+const initSliders = () => {
+  const imageList = document.querySelector(".slider-wrapping .mySlide-list-news");
+  const slideButtons = document.querySelectorAll(".slider-wrapping .slide-button");
+
+// Slide images according to the slide button clicks
+  slideButtons.forEach(button => {
+      button.addEventListener("click", () => {
+          const direction = button.id === "prev-slide" ? -1 : 1;
+          const scrollAmount = imageList.clientWidth * direction;
+          imageList.scrollBy({ left: scrollAmount, behavior: "smooth"});
+      });
+  });
+}
+
+window.addEventListener("load", initSliders);
+//News End
+
