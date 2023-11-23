@@ -923,3 +923,89 @@ body {
   top: -10px;
   bottom: -10px;
 }
+.about{
+  margin: 88px 0px 0px 0px;
+}
+.about-content-1{
+  margin: 112px 0px 48px 0px;
+}
+.about-mission h4{
+  font-size: 32px;
+  font-family: sans-serif;
+  margin: 0px 0px 16px 0px;
+}
+.about-mission p{
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px 0px 15px 0px;
+}
+.about-vision h4{
+  font-size: 32px;
+  font-family: sans-serif;
+  margin: 0px 0px 16px 0px;
+}
+.about-vision p{
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0px 0px 15px 0px;
+}
+
+
+/*styling team*/
+.about-content-2{
+  position: relative;
+	width: 100%;
+	height: 100%;
+	background: #400a0a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.about-team-title{
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+.about-team-content{
+  width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 16px;
+}
+.about-team-content img{
+  width: 100%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.about-team-box h3{
+  font-size: 23px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.about-team-box h5{
+  font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.about-team-icons i{
+  display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+.about-team-icons i:hover{
+  transform: scale(1.2);
+}
+.about-team-box:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+}
