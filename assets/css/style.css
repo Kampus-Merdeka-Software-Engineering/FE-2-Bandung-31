@@ -1295,6 +1295,7 @@ footer{
   padding: 40px;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
   grid-area: form;
+  border-radius: 10px;
 }
 .contact-us-box-info{
   background-color: #b7b4bb;
@@ -1321,6 +1322,7 @@ footer{
   flex-direction: column;
   margin-bottom: 10px;
   width: 50%;
+  border-radius: 10px;
 }
 .contact-form-input span{
   color: black;
@@ -1334,6 +1336,7 @@ footer{
   font-size: 16px;
   outline: none;
   border: 1px solid #333;
+  border-radius: 10px;
 }
 .contact-form-input textarea{
   padding: 10px;
@@ -1343,6 +1346,7 @@ footer{
   resize: none;
   min-height: 160px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 .contact-form-input input[type="submit"]{
   background-color:mediumblue;

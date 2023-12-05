@@ -70,3 +70,14 @@ const initSliders = () => {
 window.addEventListener("load", initSliders);
 //News End
 
+//Connect FE to BE
+ // Section halaman berita
+async function getBeritas() {
+  try {
+    const res = await fetch('');
+    const resJson = await res.Json();
+    console.log(resJson);
+  } catch (error) {
+
+  }
+}
