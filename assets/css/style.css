@@ -874,7 +874,7 @@ body {
 .about-team-content{
   width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	grid-template-columns: auto auto auto;
 	align-items: center;
 	gap: 2rem;
 	text-align: center;
