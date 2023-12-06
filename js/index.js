@@ -1,5 +1,5 @@
 // const API_URL = "http://localhost:3000";
-const API_URL = 'https://be-2-bandung-31-production.up.railway.app/' 
+const API_URL = 'https://be-2-bandung-31-production.up.railway.app' 
 
 document.addEventListener("DOMContentLoaded", async () => {
 	if (window.location.pathname.includes("index.html")) {
@@ -17,22 +17,24 @@ const fetchAllProducts = async () => {
 		const response = await fetch(`${API_URL}/beritas`);
 		const berita = await response.json();
 		console.log(berita);
-		displayProducts(berita);
+		berita.map(item => {
+			return(displayProducts(item))
+		})
 	} catch (error) {
 		console.error("Error:", error);
 	}
 };
+fetchAllProducts ()
 
 const displayProducts = (berita) => {
-	const section = document.getElementsByClassName("headline")
-	products.forEach((berita) => {
+	const section = document.getElementById("news-fetch")
+	console.log(section);
 		const div = document.createElement("div");
 		div.innerHTML = `
       <h3>${berita.judul}</h3>
       <p>Price: ${berita.penulis}, ${berita.createdAt} </p>
     `;
 		section.appendChild(div);
-	});
 };
 
 // catalog api
