@@ -24,19 +24,19 @@ header {
 }
 
 header .navbar {
-  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #400a0a;
 }
-header img {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  justify-content: center;
-  width: 180px;
-  height: 70px;
+
+header .navbar .logo{
+    font-size: 50px;
+    font-family: 'Montserrat';
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
 }
 
 .navbar .menu-links {
