@@ -82,3 +82,33 @@ async function setupCatalogPage() {
 		console.error("Error:", error);
 	}
 }
+
+
+// POST MESSAGE
+function setupContactForm(){
+	const form = document.getElementById("contact-form");
+	console.log(form,"ini form");
+	form.addEventListener("submit", async function(event) {
+		event.preventDefault();
+		const formData = new FormData(form);
+		const formProps = Object.fromEntries(formData);
+		try {
+			const response = await fetch(`${API_URL}/contacts`,{
+				method: "POST",
+				headers: {
+					"Content-Type" : "application/json",
+				},
+				body: JSON.stringify(formProps),
+			});
+			const data = await response.json();
+		} catch (error) {
+			console.error("error", error);
+		}
+	
+	});
+}
+function myFunction() {
+	alert("Data Berhasil Dikirimkan");
+  }
+setupContactForm();
+

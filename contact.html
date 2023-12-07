@@ -26,46 +26,38 @@
       </header>
       <!-- Header End -->
 
-      <!-- Contact Us Start -->
-      <section>
+       <!-- Contact Us Start -->
+       <section>
         <div class="contact-us">
           <div class="contact-us-title">
             <h2>CONTACT US</h2>
           </div>
           <div class="contact-us-box">
             <div class="contact-us-box-form">
-              <h3>Send a Messages</h3>
-              <form>
+              <h3>Send a Feedback</h3>
+              <form id="contact-form">
                 <div class="contact-form-box">
                   <div class="contact-form-wrapper">  
                     <div class="contact-form-input"> 
-                      <span>First Name :</span>
-                      <input type="text" placeholder="Software">
+                      <label for="name"> Name :</label>
+                      <input type="text" id="name" name="name" placeholder="Input Your Name">
                     </div>
-                    <div class="contact-form-input">
-                      <span>Last Name :</span>
-                      <input type="text" placeholder="Engineer">
-                    </div>
-                  </div>
-                  <div class="contact-form-wrapper">
                     <div class="contact-form-input"> 
-                      <span>Email :</span>
-                      <input type="text" placeholder="blabla@email.com">
-                    </div>
-                    <div class="contact-form-input">
-                      <span>Phone :</span>
-                      <input type="text" placeholder="+62 209 220 92">
+                      <label for="email">Email :</label>
+                      <input type="text" id="email" name="email" placeholder="Please Input Your Email">
                     </div>
                   </div>
+
                   <div class="contact-form-wrapper2">
                     <div class="contact-form-input">
-                      <span>Message :</span>
-                      <textarea placeholder="Write Ur Message"></textarea>
+                      <label for="feedback">Feedback :</label>
+                      <textarea id="feedback" name="feedback" id="feedback" placeholder="Write Ur Message"></textarea>
                     </div>
                   </div>
+
                   <div class="contact-form-wrapper2">
                     <div class="contact-form-input">
-                      <input type="submit" value="Send">
+                      <button type="submit"  onclick="myFunction()" >CONTACT US NOW</button>
                     </div>
                   </div>
                 </div>  
@@ -81,7 +73,6 @@
           </div>
         </div>
         </section>
-      <!-- Contact Us End -->
 
       <!-- Footer Start -->
       <footer>
