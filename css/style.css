@@ -1,6 +1,8 @@
 /* Importing Google font - Fira Sans */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Bebas+Neue&family=Bevan&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Krona+One&family=Merriweather:wght@900&family=PT+Serif:wght@700&family=Poppins:ital,wght@0,500;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@100;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,9 @@
 
 body {
   background: white;
+}
+div {
+  justify-items: center;
 }
 
 /* HEADER STYLING START */
@@ -34,7 +39,7 @@ header .navbar {
 header .navbar .logo{
     font-size: 41px;
     font-weight: bolder;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     color: white;
     text-decoration: none;
     padding: 1.5rem;
@@ -52,6 +57,7 @@ header .navbar .logo{
 .navbar .menu-links li a {
   color: #fff;
   font-weight: 500;
+  font-size: 20px;
   text-decoration: none;
   transition: 0.2s ease;
 }
@@ -115,22 +121,22 @@ body {
 }
 .content {
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 .content main {
-  width: 45%;
   height: 662px;
   display: flex;
 }
 .content aside {
-  width: 10%;
   height: 662px;
   display: flex;
+  margin-left: 10px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .top-container{
-  max-width: 1280px;
   margin: 3rem 0 0 7rem;
   justify-content: cen; 
 }
@@ -168,7 +174,6 @@ body {
   padding: 10px;
   border-radius: 18px;
   margin-right: 5px;
-  margin-left: 140px;
   margin-bottom: 0;
 }
 
@@ -176,12 +181,10 @@ body {
   margin-top: 0;
   margin-bottom: 500px;
   border-radius: 16px;
-  margin-left: 140px;
   padding: 10px;
 }
 
 .slideshow-container {
-  max-width: 1280px;
   position: relative;
   margin: auto;
 }
@@ -190,11 +193,10 @@ body {
 /* text top */
 .text h3 {
   color: #f2f2f2;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   padding-left: 1px;
   position: absolute;
   bottom: 65px;
-  width: 100%;
   align-items: start;
   text-align: left;
   margin-left: 28px;
@@ -237,8 +239,8 @@ body {
 .text-side-1 {
   margin: 0 auto;
   position: absolute;
-  margin-left: 11rem;
-  bottom: 46rem;
+  margin-left: 2rem;
+  bottom: 47rem;
 }
 .text-side-1 h3 {
   bottom: 1.5rem;
@@ -265,7 +267,6 @@ body {
   background-color: blue;
   display: inline;
   padding: 8px 13px 8px 13px;
-  margin-left: 0.2rem;
 }
 
 .text-side-1 p {
@@ -282,8 +283,8 @@ body {
 .text-side-2 {
   margin: 0 auto;
   position: absolute;
-  margin-left: 11rem;
-  bottom: 32rem;
+  margin-left: 2rem;
+  bottom: 33rem;
 }
 .text-side-2 h3 {
   position: relative;
@@ -291,7 +292,7 @@ body {
   font-weight: bold;
   text-align: left;
   margin-left: 0.2rem;
-}
+} 
 .text-side-2 h3 a{
   text-decoration: none;
   color: white;
@@ -346,11 +347,12 @@ body {
 
 /* HOT NEWS*/
 .hot-news-container {
-  max-width: 1280px;
   margin: -2rem 0 0 7rem;
 }
 .row {
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 /* TAGLINE */
 .tagline {
@@ -572,16 +574,19 @@ body {
 
 /* TRENDING NEWS STYLING */
 .trending {
-  width: 100%;
   padding: 1px 1px 1px 0;
-  margin: 3rem 0 0 4rem;
+  margin: 0 auto;
+  margin-left: -70px;
+  justify-content: center;
 }
 /* styling heading */
 .trending h2 {
   text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  justify-content: center;
   color: black;
   font-size: 36px;
-  margin: 0 0 24px -120px;
 }
 
 /* Trending News */
@@ -596,11 +601,11 @@ body {
 
 .container-trending {
   position: flex;
-  max-width: 1280px;
-  width: 100%;
   padding: 0 10px;
   border: 5px;
-  margin-left: -100px;
+  margin: 0 auto;
+  justify-content: center;
+ 
 }
 
 .row-4 {
@@ -613,7 +618,7 @@ body {
 }
 .card-trending a{
   text-decoration: none;
-  color: #000;;
+  color: #000;
 }
 .card-trending a:hover{
   color: red;
@@ -700,16 +705,20 @@ body {
   margin: 0 0 0 28px;
 }
 /* Latest News*/
+div #scroll-news {
+  display: flex;
+  justify-items: center;
+}
 .newsLatest{
   margin: 32px 0 0 -7rem;
 }
 
 .container-news {
   position: flex;
-  max-width: 1500px;
-  width: 100%;
-  display: inline-block;
+  padding: 0 10px;
   border: 5px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .wrapping{
@@ -833,7 +842,7 @@ body {
   text-align: center;
 }
 .about-team-content{
-  width: 100%;
+  
 	display: grid;
 	grid-template-columns: auto auto auto;
 	align-items: center;
@@ -842,7 +851,7 @@ body {
 	margin-top: 16px;
 }
 .about-team-content img{
-  width: 100%;
+  
 	height: auto;
 	border-radius: 15px;
 	margin-bottom: 15px;
@@ -877,8 +886,8 @@ body {
 
 /* footer */
 footer{
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
   background: black;
   margin: 70px 25px 0 25px;
   padding: 25px;
@@ -888,12 +897,19 @@ footer{
 .f-top{
   display: flex;
 }
+.f-top p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: white;
+
+}
 
 .f-top h1{
-  margin-top: 1.8rem;
   font-size: 1.5rem;
-  font-family: Josefin sans;
-  margin-left: 28rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-left: 18rem;
   color: white;
 }
 .f-item{
@@ -903,7 +919,7 @@ footer{
 .f-bot-text h2{
   color: white;
   font-size: 1rem;
-  font-family: Josefin sans;
+  font-family: "Montserat";
   margin-right: 4rem;
   text-align: justify;
   margin-top: 3rem;
@@ -982,9 +998,16 @@ footer{
 
 .bottom-text p{
   color: white;
-  font-family: Josefin sans;
+  font-family: "Montserrat";
   font-size: 1rem;
-  opacity: 0.7;
+
+}
+.bottom-text a {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 /*Latest News*/
@@ -1272,7 +1295,7 @@ footer{
 }
 .contact-form-box{
   position: relative;
-  width: 100%;
+  
 }
 .contact-form-wrapper{
   display: flex;
@@ -1290,9 +1313,6 @@ footer{
   margin: 10px 0 5px 0;
   font-family: Josefin sans;
   font-weight: 400;
-}
-.contact-form-wrapper2 .contact-form-input{
-  width: 100%;
 }
 .contact-form-input input{
   padding: 10px;
@@ -1333,7 +1353,7 @@ footer{
   padding: 0;
 }
 .contact-us-box-map iframe{
-  width: 100%;
+  
   height: 100%;
 }
 /* Responsive Tablet */
@@ -1374,9 +1394,6 @@ footer{
     gap: 0;
     flex-direction: column;
   }
-  .contact-form-input{
-    width: 100%;
-  }
   .contact-us-box-map{
     min-height: 300px;
     padding: 30px;
@@ -1400,9 +1417,6 @@ footer{
      gap: 0;
      flex-direction: column;
    }
-   .contact-form-input{
-     width: 100%;
-   }
    .contact-us-box-map{
      min-height: 300px;
      padding: 30px;
@@ -1421,7 +1435,7 @@ footer{
   header.show-mobile-menu::before {
     content: "";
     height: 100%;
-    width: 100%;
+    
     position: fixed;
     left: 0;
     top: 0;
@@ -1431,7 +1445,7 @@ footer{
   .navbar .menu-links {
     height: 100vh;
     max-width: 300px;
-    width: 100%;
+    
     background: #fff;
     position: fixed;
     left: -300px;
