@@ -828,7 +828,6 @@ body {
   margin-bottom: 15px;
 }
 
-
 /*About*/
 .about-content-1{
   background-color: #b7b4bb;
@@ -842,44 +841,32 @@ body {
   padding-top: 16px;
 }
 .about-content-1 p{
-  font-size: 14px;
+  font-size: 16px;
   margin: 0 0 0 16px;
   padding-bottom: 15px;
   font-family: sans-serif;
 }
 .about-content-2{
+  font-family: sans-serif;
   background-color:#b7b4bb;
   margin: 16px 80px 32px 80px;
   border-radius: 10px 10px 10px 10px;
   display:flex
 }
-.about-mission{
-  margin: 16px 12px 0 16px;
-}
-.about-mission h4{
+.about-content-2 h4{
   font-size: 32px;
-  font-family: sans-serif;
   margin: 0px 0px 16px 0px;
 }
-.about-mission p{
-  font-size: 14px;
-  font-family: sans-serif;
-  margin: 0px 0px 15px 0px;
+.about-content-2 p{
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.about-mission{
+  margin: 16px 12px 0 16px;
 }
 .about-vision{
   margin: 16px 16px 0px 12px;
 }
-.about-vision h4{
-  font-size: 32px;
-  font-family: sans-serif;
-  margin: 0px 0px 16px 0px;
-}
-.about-vision p{
-  font-size: 14px;
-  font-family: sans-serif;
-  margin: 0px 0px 15px 0px;
-}
-
 /*styling team*/
 .about-content-3{
   position: relative;
@@ -895,7 +882,6 @@ body {
   text-align: center;
 }
 .about-team-content{
-  
 	display: grid;
 	grid-template-columns: auto auto auto;
 	align-items: center;
