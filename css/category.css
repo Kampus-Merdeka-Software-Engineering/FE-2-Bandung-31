@@ -1,0 +1,62 @@
+/* Category styling start */
+.category{
+  justify-content: center;
+  margin: 9rem 0 0 2rem;
+}
+
+.category-row{
+  display: flex;
+}
+
+.wrap-category h1{
+  font-size: 40px;
+}
+
+.content-category{
+  display: flex;
+  margin: 2rem;
+}
+
+.content-category img{
+  border-radius: 10px;
+}
+
+.title-category{
+  margin: 2rem 0 0 1rem;
+}
+.title-category a{
+  text-decoration: none;
+  color: #000;
+}
+
+.title-category p{
+  margin-top: 1rem;
+}
+
+.wrap-category2{
+  margin-top: 2rem;
+}
+.wrap-content2-category{
+  display: flex;
+  width: 500px;
+  margin-top: 1rem;
+}
+
+.wrap-content2-category img{
+  width: 100%;
+}
+
+.title-content2{
+  margin: 2rem 0 0 1rem;
+}
+
+.news-pages-content2-prim-cap h4 a{
+  font-size: 15px;
+}
+/* Category styling end */
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

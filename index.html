@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Portal</title>
-    
+    <title>Mediazza</title>
+    <!-- Link Favicon -->
+    <link rel="Icon" href="./assets/gambar/favicon/logo.svg">
     <!-- Link CSS-->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -23,12 +24,17 @@
         <header>
             <nav class="navbar">
               <a href="index.html" class="logo">
-                <p>Mediazza</p>
+                <img src="./assets/gambar/favicon/logo1.svg">
+                <h1>Mediazza</h1>
               </a>
               <ul class="menu-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="latest-news.html">Latest News</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Category</a>
+                    <div class="dropdown-content" id="categoryDropdown">
+                    </div>
+                  </li>
                 <li><a href="contact.html">Contact</a></li>
                 <span id="close-menu-btn" class="material-symbols-outlined">close</span>
               </ul>
@@ -45,29 +51,29 @@
                        <main>
                            <div class="slideshow-container">
                                <div class="mySlides fade">
-                                   <img src="assets/img/top-1.png" width="650px" height="540px">
+                                   <img src="./assets/img/section-top1.jpeg">
                                    <div class="text">
                                        <h6 class="headline">BUSINESS</h6>
-                                       <h3><a href="news-pages.html">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, dolore?</a></h3>
-                                       <p>by Kabar.com, Nov 2023</p>
+                                       <h3><a href="https://finance.detik.com/berita-ekonomi-bisnis/d-7082382/transmart-full-day-sale-bikin-happy-gerai-cempaka-putih-masih-padat-pembeli">Transmart Full Day Sale Bikin Happy , Gerai Cempaka Putih Masih Padat Pembeli</a></h3>
+                                       <p>by Detik.com, Desember 2023</p>
                                    </div>
                                </div>
                        
                                <div class="mySlides fade">
-                                   <img src="assets/img/top-2.png" width="650px" height="540px">
+                                   <img src="./assets/img/section-top2.jpeg">
                                    <div class="text">
-                                       <h6 class="headline">BUSINESS</h6>
-                                       <h3><a href="news-pages.html">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, dolore?</a></h3>
-                                       <p>by Kabar.com, Nov 2023</p>
+                                       <h6 class="headline">POLITIK</h6>
+                                       <h3><a href="https://news.detik.com/pemilu/d-7082375/gibran-sambangi-ponpes-al-tsaqafah-jagakarsa-disambut-said-aqil">Gibran Sambangi Ponpes Al-Tsaqafah Jagakarsa, Disambut Said Aqil</a></h3>
+                                       <p>by Detik.com, Desember 2023</p>
                                    </div>
                                </div>
                        
                                <div class="mySlides fade">
-                                   <img src="assets/img/top-3.png" width="650px" height="540px">
+                                   <img src="./assets/img/section-top3.jpeg">
                                    <div class="text">
-                                       <h6 class="headline">BUSINESS</h6>
-                                       <h3><a href="news-pages.html">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, dolore?</a></h3>
-                                       <p>by Kabar.com, Nov 2023</p>
+                                       <h6 class="headline">INTERNASIONAL</h6>
+                                       <h3><a href="https://news.detik.com/foto-news/d-7081858/aksi-biadab-militer-israel-tangkap-dan-telanjangi-warga-palestina">Aksi Biadab Militer Israel Tangkap dan Telanjangi Warga Palestina</a></h3>
+                                       <p>by Detik.com, Desember 2023</p>
                                    </div>
                                </div>
                            </div>
@@ -75,19 +81,19 @@
                        <aside>
                            <div class="aside">
                                <div class="side">
-                                   <img src="assets/img/side-1.png" alt="side-1" width="395px" height="325px" >
+                                   <img src="./assets/img/section-top4.jpeg" alt="side-1">
                                    <div class="text-side-1">
-                                       <h6 class="headline">Fashion</h6>
-                                       <h3><a href="news-pages.html">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, dolore?</a></h3>
-                                       <p>by Kabar.com, Nov 2023</p>
+                                       <h6 class="headline">OLAHRAGA</h6> 
+                                       <h3><a href="https://sport.detik.com/sepakbola/liga-inggris/d-7081115/top-mohamed-salah-200-gol-di-liverpool">TOP! Mohammad Salah 200 Gol <br> di Liverpool</a></h3>
+                                       <p>by Detik.com, Desember 2023</p>
                                    </div>
                                </div>
                                <div class="side-2">
-                                   <img src="assets/img/side-2.png" alt="" width="395px" height="219px">
+                                   <img src="./assets/img/section-top5.jpeg" alt="">
                                    <div class="text-side-2">
                                        <h6 class="headline">Technology</h6>
-                                       <h3><a href="news-pages.html">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, dolore?</a></h3>
-                                       <p>by Kabar.com, Nov 2023</p>
+                                       <h3><a href="https://inet.detik.com/consumer/d-6503449/mediatek-pamer-produk-wifi-7-dan-chip-genio-700-untuk-smart-home">MediaTek Pamer Produk WiFi 7 dan Chip Genio 700 untuk Smart Home</a></h3>
+                                       <p>by Detik.com, Desember 2023</p>
                                    </div>
                                </div>
                            </div>
@@ -112,72 +118,75 @@
                                 <h1>HotNews</h1>
                             <ul>
                                 <li>
-                                <a href="#">Lifestye</a>
+                                <a href="fashion.html">Lifestye</a>
                                 </li>
                                 <li>
-                                <a href="#">Travel</a>
+                                <a href="internasional.html">Internasional</a>
                                 </li>
                                 <li>
-                                <a href="#">Fashion</a>
+                                <a href="fashion.html">Fashion</a>
                                 </li>
                                 <li>
-                                <a href="#">Sport</a>
+                                <a href="olahraga.html">Sport</a>
                                 </li>
                                 <li>
-                                <a href="#">Technology</a>
+                                <a href="teknologi.html">Technology</a>
                                 </li>
                             </ul>
                             </div> 
                     <div class="row-1">                             
                         <div class="details1">
-                            <img src="assets/img/section-hot-news/hot_news_details1.png" alt="" class="img-1">
+                            <img src="./assets/img/hotnews1.jpeg" alt="" class="img-1">
         
-                            <h4><a href="news-pages.html">Secretart for Economic Air <br> that looks like</a></h4>
+                            <h4><a href="https://www.cnnindonesia.com/internasional/20231210093724-113-1035241/korut-kutuk-as-soal-veto-gagalkan-gencatan-senjata-di-gaza">
+                                Korut Kutuk AS Soal Veto <br> Gagalkan Genjatan Senajata <br>di Gaza</a></h4>
         
-                            <h6 class="writer">by Alice cloe - Jun 19, 2020</h6>
+                            <h6 class="writer">by CNN Indonesia - 10 Desember, 2023</h6>
         
-                            <p>Struggling to sell one multi-million dollar<br>home 
-                           currently on the market won’t stop <br> actress and singer Jennifer Lopez.</p>
+                            <p>Korea Utara mengkritik Amerika Serikat (AS) <br> karena menghalangi resolusi PBB soal <br>gencatan senjata di Jalur Gaza, Palestina, <br>melalui veto.</p>
                         </div>
         
                         <div class="details2">
                             <div class="card-news">
-                                <img src="assets/img/section-hot-news/hot_right_img1.png" alt="">
+                                <img src="./assets/img/hotnews2.jpeg" alt="">
                             
                                 <div class="card-news-text">
-                                    <p class="category1">FASHION</p>
-                                    <p class="article"><a href="news-pages.html">Portrait of group of friends<br> ting eat. market in.</a></p> 
-                                    <p class="date">Jun 19, 2020</p>
+                                    <p class="category1">OLAHRAGA</p>
+                                    <h5 class="article"><a href="https://www.cnnindonesia.com/olahraga/20231210212141-142-1035403/sandy-walsh-main-full-mechelen-tahan-club-brugge-di-liga-belgia">Sandy Walsh Main Full, Mechelen Tahan Club Brugge di Liga Belgia</a></h5> 
+                                    <p class="date">10 Des, 2023</p>
                                 </div>
                             </div>
         
                             <div class="card-news">
-                                <img src="assets/img/section-hot-news/hot_right_img2.png" alt="">
+                                <img src="./assets/img/hotnews3.jpeg" alt="">
                             
                                 <div class="card-news-text">
-                                    <p class="category1">FASHION</p>
-                                    <p class="article"><a href="news-pages.html">Portrait of group of friends<br> ting eat. market in.</a></p> 
-                                    <p class="date">Jun 19, 2020</p>
+                                    <p class="category1">TEKNOLOGI</p>
+                                    <h5 class="article"><a href="https://www.cnnindonesia.com/teknologi/20231208094713-199-1034486/india-buktikan-ai-bisa-deteksi-bencana-bagaimana-ri">
+                                        India buktikan AI Bisa Deteksi Bencana, Bagaimana RI?.</a></h5> 
+                                    <p class="date">10 Des, 2023</p>
                                 </div>
                             </div>
         
                             <div class="card-news">
-                                <img src="assets/img/section-hot-news/hot_right_img3.png" alt="">
+                                <img src="./assets/img/hotnews4.jpeg" alt="">
                             
                                 <div class="card-news-text">
                                     <p class="category2">FASHION</p>
-                                    <p class="article"><a href="news-pages.html">Portrait of group of friends<br> ting eat. market in.</a></p> 
-                                    <p class="date">Jun 19, 2020</p>
+                                    <h5 class="article"><a href="https://www.cnnindonesia.com/gaya-hidup/20231210203854-277-1035395/zara-dikecam-terkait-iklan-yang-dianggap-hina-penderitaan-palestina">
+                                       Zara Dikecam Terkait Iklan yang Dianggap Hina Penderitaan Palestina</a></h5> 
+                                    <p class="date">10 Des, 2023</p>
                                 </div>
                             </div>
         
                             <div class="card-news">
-                                <img src="assets/img/section-hot-news/hot_right_img1.png" alt="">
+                                <img src="./assets/img/hotnews5.jpeg" alt="">
                             
                                 <div class="card-news-text">
-                                    <p class="category3">FASHION</p>
-                                    <p class="article"><a href="news-pages.html">Portrait of group of friends<br> ting eat. market in.</a></p> 
-                                    <p class="date">Jun 19, 2020</p>
+                                    <p class="category3">POLITIK</p>
+                                    <h5 class="article"><a href="https://www.cnnindonesia.com/nasional/20231210210922-12-1035400/yasonna-buka-suara-soal-eddy-hiariej-jadi-tersangka-kasus-korupsi">
+                                        Yasonna Buka Suara Soal Eddy Hiariej Jadi Tersangka Kasus Korupsi</a></h5> 
+                                    <p class="date">10 Des, 2023</p>
                                 </div>
                             </div>   
                         </div>
@@ -190,45 +199,40 @@
                                 <h1>Most Recent</h1>
                             </div>
                             <div class="most-recent-prim">
-                                <img src="assets\img\most_recent.png" alt="">
+                                <img src="./assets/img/mostrecent1.jpeg" alt="">
                                     <div class="most-recent-prim-cap">
-                                        <h6>Vogue</h6>
-                                        <h4><a href="news-pages.html">
-                                            Lorem ipsum dolor sit amet<br>
-                                            consectetur adipisicing elit
+                                        <h6>POLITIK</h6>
+                                        <h4><a href="https://news.detik.com/pemilu/d-7082116/prabowo-mas-gibran-jangan-ragu-kau-harus-bangga-dengan-orang-tuamu">
+                                            Prabowo: Mas Gibran Jangan Ragu, Kau Harus Bangga dengan Orang Tuamu
                                         </a></h4>
-                                        <p>Jhon | 2 Hours ago</p>
+                                        <p>Akbar | 4 Hours ago</p>
                                     </div>
             
                             </div>
                             <div class="most-recent-sub">
                                 <div class="most-recent-sub-img">
-                                    <img src="assets\img\most_recent1.png" alt="">
+                                    <img src="./assets/img/mostrecent2.jpeg" alt="">
                                 </div>
                                 <div class="most-recent-sub-cap">
-                                    <h4><a href="news-pages.html">
-                                        Lorem ipsum dolor sit amet </a>
+                                    <h4><a href="https://news.detik.com/pemilu/d-7082128/mahfud-jelang-debat-perdana-pokoknya-saya-siap">
+                                        Mahfud Jelang Debat Perdana: <br>
+                                        Pokoknya Saya Siap  </a>
                                     </h4>
-                                    <h5>Lorem ipsum dolor sit amet<br>
-                                        consectetur adipisicing elit<br>
-                                        sed do eiusmod tempor incididunt ut <br>
-                                        labore et dolore magna aliqua</h5>
-                                    <p>Jhon | 2 hours ago</p>
+                                    <h5>KPU bakal menggelar debat <br> capres dan cawapres <br> perdana pekan depan. 
+                                        </h5>
+                                    <p>Whisnu | 2 hours ago</p>
                                 </div>
                             </div>
                             <div class="most-recent-sub">
                                 <div class="most-recent--sub-img">
-                                    <img src="assets\img\most_recent2.png" alt="">
+                                    <img src="./assets/img/mostrecent3.jpeg" alt="">
                                 </div>
                                 <div class="most-recent-sub-cap">
-                                    <h4> <a href="news-pages.html">
-                                        Lorem ipsum dolor sit amet </a>
+                                    <h4> <a href="https://news.detik.com/pemilu/d-7081788/head-to-head-lsi-prabowo-gibran-ungguli-anies-cak-imin-dan-ganjar-mahfud">
+                                        Head to Head LSI </a>
                                     </h4>
-                                    <h5>Lorem ipsum dolor sit amet<br>
-                                        consectetur adipisicing elit<br>
-                                        sed do eiusmod tempor incididunt ut <br>
-                                        labore et dolore magna aliqua</h5>
-                                    <p>Jhon | 3 hours ago</p>
+                                    <h5>Prabowo-Gibran Ungguli Anies-Cak Imin <br>dan Ganjar-Mahfud</h5>
+                                    <p>Ronaldo | 3 hours ago</p>
                                 </div>
                             </div>
                         </div>
@@ -246,32 +250,8 @@
                     <div class="slider-wrapper">
                         <button id="prev-slide" class="slide-button material-symbols-rounded">&#10094;</button>
                         <div class="mySlide-list">
-                                <div class="row-4">
-                                    <div class="card-trending">
-                                        <img src="/assets/img/pict-1.jpg" alt="" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
-                                    <div class="card-trending">
-                                        <img src="/assets/img/pict-3.jpg" alt="" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
-                                    <div class="card-trending">
-                                        <img src="/assets/img/pict-4.jpg" alt="" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
-                                    <div class="card-trending">
-                                        <img src="/assets/img/pict-5.jpeg"" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
-                                    <div class="card-trending">
-                                        <img src="/assets/img/pict-6.jpg" alt="" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
+                                <div class="row-4" id="slider-news">
+                                
                                 </div>
                         </div>
                         <button id="next-slide" class="slide-button material-symbols-rounded">&#10095;</button>
@@ -286,8 +266,6 @@
                 <div class="video-single">
                     <div class="video-group">
                       <iframe
-                        width="1100"
-                        height="550"
                         src="https://www.youtube.com/embed/_3iagXqJTDQ?si=axbyzZq5w06Hmri-"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -298,8 +276,6 @@
                   <div class="video-menu">
                     <div class="video-group-1">
                       <iframe
-                        width="250"
-                        height="150"
                         src="https://www.youtube.com/embed/72A_aOFvnC0?si=qDp258pEa4MZawDR"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -309,8 +285,6 @@
                     </div>
                     <div class="video-group-1">
                       <iframe
-                        width="250"
-                        height="150"
                         src="https://www.youtube.com/embed/0VXbyHqJROM?si=Vft_blMWktlWLVrK"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -320,8 +294,6 @@
                     </div>
                     <div class="video-group-1">
                       <iframe
-                        width="250"
-                        height="150"
                         src="https://www.youtube.com/embed/7CjMkTA-6jk?si=kAego1mmtvQUBuEt"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -331,8 +303,6 @@
                     </div>
                     <div class="video-group-1">
                       <iframe
-                        width="250"
-                        height="150"
                         src="https://www.youtube.com/embed/LRD1jdvB6xw?si=C_nl31N6hPbqz-L3"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -353,32 +323,8 @@
                     <div class="slider-wrapping">
                         <button id="prev-slide" class="slide-button material-symbols-rounded">&#10094;</button>
                         <div class="mySlide-list-news">
-                                <div class="row-4">
-                                    <div class="card-latest">
-                                        <img src="/assets/img/pict-1.jpg" alt="" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
-                                    <div class="card-latest">
-                                        <img src="/assets/img/pict-3.jpg" alt="" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
-                                    <div class="card-latest">
-                                        <img src="/assets/img/pict-4.jpg" alt="" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
-                                    <div class="card-latest">
-                                        <img src="/assets/img/pict-5.jpeg"" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
-                                    <div class="card-latest">
-                                        <img src="/assets/img/pict-6.jpg" alt="" class="mySlide-item">
-                                        <a href="news-pages.html"><h4>FREE Palestine Demonstrane</h4></a>
-                                        <p>Jay | 2 hours ago</p>
-                                    </div>
+                                <div class="row-4" id="latesnews-slider">
+                                    
                                 </div>
                         </div>
                         <button id="next-slide" class="slide-button material-symbols-rounded">&#10095;</button>
@@ -388,7 +334,7 @@
         </section>
         <!-- News End -->
 
-         <!-- footer start -->
+        <!-- footer start -->
          <footer>
             <div class="container">
                 <div class="footer-row">
@@ -420,31 +366,39 @@
                         </div>
                         <div class="f-bot-pg">
                          <div class="f-bot-item">
-                                <img src="assets/img/footer_post1.png" alt="fp1" width="86px" height="80px">
+                                <img src="./assets/img/footer1.jpeg" alt="fp1" width="86px" height="80px">
         
                                 <div class="f-bot-item-txt">
-                                    <h5><a href="">Lorem ipsum dolor, sit amet consectetur <br>
-                                        adipisicing elit. Nihil, accusantium.</a>
+                                    <h5>
+                                        <a href="https://finance.detik.com/energi/d-7082022/ri-punya-plts-terapung-terbesar-di-asia-tenggara-ini-keunggulannya">
+                                            RI Punya PLTS Terapung Terbesar Di Asia Tenggara
+                                        </a>
                                     </h5>
-                                    <p>Mediazza | 5 Hours ago</p>
+                                    <p>Jawa Pos | 5 Hours ago</p>
                                 </div>
                           </div>
                            <div class="f-bot-item">
-                                <img src="assets/img/footer_post2.png" alt="fp1" width="86px" height="80px">
+                                <img src="./assets/img/footer2.png" alt="fp1" width="86px" height="80px">
         
                                 <div class="f-bot-item-txt">
-                                    <h5><a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-                                        Magnam, veniam.</a></h5>
-                                    <p>Mediazza | 5 Hours ago</p>
+                                    <h5>
+                                        <a href="https://www.detik.com/jogja/budaya/d-7082447/lirik-lagu-bertemu-kembali-melly-goeslaw-nike-ardilla-diciptakan-dengan-ai">
+                                            Lirik Lagu Bertemu Kembali Melly Goeslaw - Nike Ardilla, Diciptakan dengan AI
+                                        </a>
+                                    </h5>
+                                    <p>Jawa Pos | 5 Hours ago</p>
                                 </div>
                           </div>
                            <div class="f-bot-item">
-                                <img src="assets/img/footer_post3.png" alt="fp1" width="86px" height="80px">
+                                <img src="./assets/img/footer3.jpeg" alt="fp1" width="86px" height="80px">
         
                                 <div class="f-bot-item-txt">
-                                    <h5><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                                        Veniam, repudiandae!</a></h5>
-                                    <p>Mediazza | 5 Hours ago</p>
+                                    <h5>
+                                        <a href="https://oto.detik.com/mobil/d-7082051/bukan-mobil-listrik-ternyata-phev-lebih-rawan-bermasalah">
+                                            Bukan Mobil Listrik Ternyata Phev Lebih Rawan Bermasalah
+                                        </a>
+                                    </h5>
+                                    <p>Jawa Pos | 5 Hours ago</p>
                                 </div>
                           </div>
                         </div>
@@ -459,7 +413,8 @@
         <!-- footer end -->
     </div>
 
-<script src="./js/index.js"></script>
-<script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
 
+</body>
 </html>
